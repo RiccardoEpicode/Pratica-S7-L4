@@ -15,6 +15,8 @@ function fetchImages(query) {
   })
     .then((res) => res.json())
     .then((data) => {
+      console.log("Object Received:", data);
+
       console.log("Images:", data.photos);
       displayCards(data.photos);
     })
@@ -85,4 +87,4 @@ searchBtn.addEventListener("click", () => {
   if (query) fetchImages(query);
 });
 
-fetchImages("hamsters");
+fetchImages();
