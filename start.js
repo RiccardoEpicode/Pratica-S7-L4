@@ -84,3 +84,5 @@ searchBtn.addEventListener("click", () => {
   const query = searchInput.value.trim();
   if (query) fetchImages(query);
 });
+
+fetchImages("hamsters");
